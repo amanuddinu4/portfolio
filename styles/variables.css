@@ -1,0 +1,19 @@
+:root {
+  --bg: 252 250 249; /* RGB triple for tailwind color mapping */
+  --surface: 255 255 255;
+  --text: 20 20 20;
+  --muted: 100 100 110;
+  --accent: 45 125 255;
+  --border: 220 220 230;
+}
+
+[data-theme='dark'] {
+  --bg: 10 11 12;
+  --surface: 18 20 22;
+  --text: 230 230 230;
+  --muted: 160 160 170;
+  --accent: 80 160 255;
+  --border: 40 42 46;
+}
+
+
