@@ -2,12 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  // 👇 Add these for GitHub Pages
-  output: 'export',        // ensures static HTML export
+  // 👇 This is the new way in Next.js 15
+  output: 'export',
+
   images: {
-    unoptimized: true      // required since GitHub Pages can't optimize images
+    unoptimized: true, // GitHub Pages can't handle Next.js image optimization
   },
 
+  // 👇 Only if deploying to https://amanuddinu4.github.io/portfolio
+  // Remove this if deploying to root domain (amanuddinu4.github.io)
 };
 
 module.exports = nextConfig;
